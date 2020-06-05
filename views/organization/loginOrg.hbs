@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="container-form">
+    <h1> Авторизация <br>
+    организации</h1>
+    <div class="jumbotron col-sm-4 pull-center">
+      {{#if message }}
+      <span>{{message}}</span>
+      {{/if}}
+      <form action="/org/login" method="post">
+        <div>
+          <input type="tel" name="phone" class="inpt" placeholder="Телефон" />
+        </div>
+        <div>
+          <input type="password" name="password" class="inpt" placeholder="Пароль" />
+        </div>
+        <div>
+          <div class="btnLinks">
+            <div>
+              <input class="btn" type="submit" value="ВОЙТИ" />
+            </div>
+            <div id="signUpLink">
+              <a class="link" href="/org/register">РЕГИСТРАЦИЯ</a>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+

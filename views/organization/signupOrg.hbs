@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="container-form">
+    <h1> Регистрация <br>
+      организации </h1>
+    <div class="jumbotron col-sm-4 pull-center">
+      {{#if message }}
+      <span>{{message}}</span>
+      {{/if}}
+      {{#if error}}
+      <p>{{error}}</p>
+      {{/if}}
+      <form action="/org/register" method="post">
+
+        <div>
+          <input type="text" name="name" class="inpt" placeholder="Название" />
+        </div>
+
+        <div>
+          <input type="tel" name="phone" class="inpt" placeholder="Телефон" />
+        </div>
+
+
+        <div>
+          <input type="email" name="email" class="inpt" placeholder="email" />
+        </div>
+
+        <div>
+          <input type="password" name="password" class="inpt"
+            placeholder="Пароль" />
+        </div>
+        <div>
+          <input class="inpt" type="password" name="confirm"
+            placeholder="Повторите пароль" />
+        </div>
+        <div>
+          <div class="btnLinks">
+            <div>
+              <input class="btn" type="submit" value="РЕГИСТРАЦИЯ" />
+            </div>
+            <div id="signUpLink">
+              <a class="link" href="/org/login">ВОЙТИ</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

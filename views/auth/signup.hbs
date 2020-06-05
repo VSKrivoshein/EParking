@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="container-form">
+    <h1> Регистрация </h1>
+    <div class="jumbotron col-sm-4 pull-center">
+      {{#if message }}
+      <span>{{message}}</span>
+      {{/if}}
+      <form action="/signup" method="post">
+
+        <div>
+          <input type="text" name="firstName" class="inpt" placeholder="Имя" />
+        </div>
+              
+        <div>
+          <input type="text" name="lastName" class="inpt" placeholder="Фамилия" />
+        </div>
+              
+        <div>
+          <input type="tel" name="phone" class="inpt" placeholder="Телефон" />
+        </div>
+              
+        <div>
+          <input type="email" name="email" class="inpt" placeholder="email" />
+        </div>
+              
+        <div>
+          <input type="password" name="password" class="inpt" placeholder="Пароль" />
+        </div>
+        <div>
+          <div class="btnLinks">
+            <div>
+              <input class="btn" type="submit" value="РЕГИСТРАЦИЯ" />
+            </div>
+            <div id="signUpLink">
+              <a class="link" href="/login">ВОЙТИ</a>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
